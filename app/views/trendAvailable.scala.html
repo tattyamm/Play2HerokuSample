@@ -1,0 +1,29 @@
+@(twitterTrendAvailableModel:Array[TwitterTrendArea])
+
+@import helper._
+
+@main("Twitter Trends Available") {
+
+<div data-role="page" class="page" data-add-back-btn="true" data-theme="d">
+
+    <!-- /header -->
+    <div data-role="header" data-theme="d">
+        <h1>twitterトレンド一覧</h1>
+    </div>
+
+    <!-- /content -->
+    <div data-role="content" data-theme="d">
+        <ul data-role="listview">
+
+            @twitterTrendAvailableModel.map { trendArea =>
+            <li>
+                <a href="http://localhost:9000/twitter/trend/@trendArea.woeid/html" data-transition="slide">@trendArea.name</a>
+            </li>
+            }
+
+        </ul>
+    </div>
+
+</div>
+}
+
