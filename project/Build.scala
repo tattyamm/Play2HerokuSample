@@ -11,15 +11,10 @@ object ApplicationBuild extends Build {
       // Add your project dependencies here,
 
       //redis追加
-      "com.typesafe" %% "play-plugins-redis" % "2.0.2",
-      "org.sedis" %% "sedis" % "1.0.1"
+      "com.typesafe" %% "play-plugins-redis" % "2.0.2"
 
       //redis用にjedisを追加
       //"Redis.clients" % "jedis" % "2.0.0"
-
-      //oauthの為に導入
-      //"net.databinder.dispatch" %% "core" % "0.9.1"
-
     )
 
     val main = PlayProject(appName, appVersion, appDependencies, mainLang = SCALA).settings(
