@@ -1,1 +1,1 @@
-550:com.typesafe.plugin.RedisPlugin
+5000:com.github.mumoshu.play2.memcached.MemcachedPlugin
