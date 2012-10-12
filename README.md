@@ -1,4 +1,4 @@
-#TwiTrend
+#Checktrend on Heroku
 
 ##概要
 * Twitterのトレンドを表示します。
