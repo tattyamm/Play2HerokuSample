@@ -1,7 +1,6 @@
 import sbt._
 import Keys._
 import PlayProject._
-import com.typesafe.startscript.StartScriptPlugin
 
 object ApplicationBuild extends Build {
 
@@ -23,13 +22,5 @@ object ApplicationBuild extends Build {
     resolvers += "Spy Repository" at "http://files.couchbase.com/maven2" // required to resolve `spymemcached`, the plugin's dependency.
 
   )
-
-  lazy val root = Project(
-    id = "root",
-    base = file("."),
-    settings = Defaults.defaultSettings ++ StartScriptPlugin.startScriptForClassesSettings ++ Seq(
-    )
-  )
-
 
 }
